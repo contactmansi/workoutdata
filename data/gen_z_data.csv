@@ -1,0 +1,29 @@
+Age,Attrition,BusinessTravel,DailyRate,Department,DistanceFromHome,Education,EducationField,EnvironmentSatisfaction,Gender,HourlyRate,JobInvolvement,JobLevel,JobRole,JobSatisfaction,MaritalStatus,MonthlyIncome,MonthlyRate,NumCompaniesWorked,OverTime,PercentSalaryHike,PerformanceRating,RelationshipSatisfaction,StockOptionLevel,TotalWorkingYears,TrainingTimesLastYear,WorkLifeBalance,YearsAtCompany,YearsInCurrentRole,YearsSinceLastPromotion,YearsWithCurrManager,born_yyyy,generation
+20,1,Travel_Frequently,871,Research & Development,6,3,Life Sciences,4,Female,66,2,1,Laboratory Technician,4,Single,2926,19783,1,Yes,18,3,2,0,1,5,3,1,0,1,0,1995,gen_z
+19,1,Travel_Rarely,528,Sales,22,1,Marketing,4,Male,50,3,1,Sales Representative,3,Single,1675,26820,1,Yes,19,3,4,0,0,2,2,0,0,0,0,1996,gen_z
+19,0,Travel_Rarely,1181,Research & Development,3,1,Medical,2,Female,79,3,1,Laboratory Technician,2,Single,1483,16102,1,No,14,3,4,0,1,3,3,1,0,0,0,1996,gen_z
+19,1,Travel_Frequently,602,Sales,1,1,Technical Degree,3,Female,100,1,1,Sales Representative,1,Single,2325,20989,0,No,21,4,1,0,1,5,4,0,0,0,0,1996,gen_z
+19,1,Travel_Rarely,303,Research & Development,2,3,Life Sciences,2,Male,47,2,1,Laboratory Technician,4,Single,1102,9241,1,No,22,4,3,0,1,3,2,1,0,1,0,1996,gen_z
+18,1,Travel_Rarely,230,Research & Development,3,3,Life Sciences,3,Male,54,3,1,Laboratory Technician,3,Single,1420,25233,1,No,13,3,3,0,0,2,3,0,0,0,0,1997,gen_z
+18,0,Travel_Rarely,812,Sales,10,3,Medical,4,Female,69,2,1,Sales Representative,3,Single,1200,9724,1,No,12,3,1,0,0,2,3,0,0,0,0,1997,gen_z
+19,1,Travel_Rarely,489,Human Resources,2,2,Technical Degree,1,Male,52,2,1,Human Resources,4,Single,2564,18437,1,No,12,3,3,0,1,3,4,1,0,0,0,1996,gen_z
+18,1,Travel_Frequently,1306,Sales,5,3,Marketing,2,Male,69,3,1,Sales Representative,2,Single,1878,8059,1,Yes,14,3,4,0,0,3,3,0,0,0,0,1997,gen_z
+20,0,Travel_Rarely,959,Research & Development,1,3,Life Sciences,4,Female,83,2,1,Research Scientist,2,Single,2836,11757,1,No,13,3,4,0,1,0,4,1,0,0,0,1995,gen_z
+20,1,Travel_Rarely,1362,Research & Development,10,1,Medical,4,Male,32,3,1,Research Scientist,3,Single,1009,26999,1,Yes,11,3,4,0,1,5,3,1,0,1,1,1995,gen_z
+20,1,Travel_Rarely,500,Sales,2,3,Medical,3,Female,49,2,1,Sales Representative,3,Single,2044,22052,1,No,13,3,4,0,2,3,2,2,2,0,2,1995,gen_z
+19,1,Travel_Rarely,419,Sales,21,3,Other,4,Male,37,2,1,Sales Representative,2,Single,2121,9947,1,Yes,13,3,2,0,1,3,4,1,0,0,0,1996,gen_z
+20,1,Travel_Rarely,129,Research & Development,4,3,Technical Degree,1,Male,84,3,1,Laboratory Technician,1,Single,2973,13008,1,No,19,3,2,0,1,2,3,1,0,0,0,1995,gen_z
+18,0,Non-Travel,287,Research & Development,5,2,Life Sciences,2,Male,73,3,1,Research Scientist,4,Single,1051,13493,1,No,15,3,4,0,0,2,3,0,0,0,0,1997,gen_z
+20,1,Travel_Rarely,1097,Research & Development,11,3,Medical,4,Female,98,2,1,Research Scientist,1,Single,2600,18275,1,Yes,15,3,1,0,1,2,3,1,0,0,0,1995,gen_z
+20,1,Travel_Frequently,769,Sales,9,3,Marketing,4,Female,54,3,1,Sales Representative,4,Single,2323,17205,1,Yes,14,3,2,0,2,3,3,2,2,0,2,1995,gen_z
+18,1,Non-Travel,247,Research & Development,8,1,Medical,3,Male,80,3,1,Laboratory Technician,3,Single,1904,13556,1,No,12,3,4,0,0,0,3,0,0,0,0,1997,gen_z
+19,0,Travel_Rarely,645,Research & Development,9,2,Life Sciences,3,Male,54,3,1,Research Scientist,1,Single,2552,7172,1,No,25,4,3,0,1,4,3,1,1,0,0,1996,gen_z
+20,0,Travel_Rarely,805,Research & Development,3,3,Life Sciences,1,Male,87,2,1,Laboratory Technician,3,Single,3033,12828,1,No,12,3,1,0,2,2,2,2,2,1,2,1995,gen_z
+20,0,Travel_Rarely,654,Sales,21,3,Marketing,3,Male,43,4,1,Sales Representative,4,Single,2678,5050,1,No,17,3,4,0,2,2,3,2,1,2,2,1995,gen_z
+19,1,Non-Travel,504,Research & Development,10,3,Medical,1,Female,96,2,1,Research Scientist,2,Single,1859,6148,1,Yes,25,4,2,0,1,2,4,1,1,0,0,1996,gen_z
+19,0,Travel_Rarely,265,Research & Development,25,3,Life Sciences,2,Female,57,4,1,Research Scientist,4,Single,2994,21221,1,Yes,12,3,4,0,1,2,3,1,0,0,1,1996,gen_z
+18,0,Non-Travel,1124,Research & Development,1,3,Life Sciences,4,Female,97,3,1,Laboratory Technician,4,Single,1611,19305,1,No,15,3,3,0,0,5,4,0,0,0,0,1997,gen_z
+18,1,Travel_Frequently,544,Sales,3,2,Medical,2,Female,70,3,1,Sales Representative,4,Single,1569,18420,1,Yes,12,3,3,0,0,2,4,0,0,0,0,1997,gen_z
+20,0,Travel_Rarely,1141,Sales,2,3,Medical,3,Female,31,3,1,Sales Representative,3,Single,2783,13251,1,No,19,3,1,0,2,3,3,2,2,2,2,1995,gen_z
+20,0,Travel_Rarely,727,Sales,9,1,Life Sciences,4,Male,54,3,1,Sales Representative,1,Single,2728,21082,1,No,11,3,1,0,2,3,3,2,2,0,2,1995,gen_z
+18,0,Non-Travel,1431,Research & Development,14,3,Medical,2,Female,33,3,1,Research Scientist,3,Single,1514,8018,1,No,16,3,3,0,0,4,1,0,0,0,0,1997,gen_z
