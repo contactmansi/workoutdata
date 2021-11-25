@@ -4,7 +4,7 @@ title: About Me
 permalink: /about/
 ---
 
-Mansi is currently a Masters student in [Business Analytics at NUS](https://msba.nus.edu.sg/). She has been leveraging Data Science, Business Knowledge, Machine Learning and Software Engineering to deliver innovative solutions for complex data-oriented problems using advanced analytical techniques, ML modelling and business domain knowledge.
+Mansi is currently pursuing Masters in [Business Analytics at NUS](https://msba.nus.edu.sg/), Singapore. She has been leveraging Data Science, Business Knowledge, Machine Learning and Software Engineering to deliver innovative solutions for complex data-oriented problems.
 
 **TOP SKILLS:**
 - Modeling: Predictive and Statistical Modelling, Supervised Learning Methods (Linear regression, logistic regression, lasso, ridge regression, Multi-Class Classification, Tree and Ensemble Models), Unsupervised Learning Methods (Clustering: K-means, K-Medians, K-Medoids, Hierarchical Clustering; Dimensionality Reduction: PCA, PCR)
@@ -17,4 +17,4 @@ Mansi is currently a Masters student in [Business Analytics at NUS](https://msba
 
 **EDUCATION:**
 - [Master of Science in Business Analytics(MSBA)](https://msba.nus.edu.sg/) at NUS, Singapore. Learning all about solving business problems with interpretable and implementable Data Science Techniques.
-- Bachelor of Engineering(B.E) from [Netaji Subhas Institute of Technology(NSIT)](http://www.nsit.ac.in/), New Delhi India**[Mansi](https://github.com/contactmansi)** [^1].
+- Bachelor of Engineering(B.E) from [Netaji Subhas Institute of Technology(NSIT)](http://www.nsit.ac.in/), New Delhi India
