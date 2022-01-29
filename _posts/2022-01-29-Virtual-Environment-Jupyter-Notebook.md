@@ -4,7 +4,7 @@ layout: post
 description: Setup new virtual environment for jupyter notebook using powershell on Windows.
 categories: [markdown]
 title: Setup Virtual Environment in Jupyter Notebook
-image: images/Employee-Attrition.png
+image: images/jnb_venv.png
 ---
 To use virtual environments with jupyter notebook, best practice is to create an independent virtual environment and add it to jupyter notebook as a kernel. This provides the portability to use the same venv on other IDEs or commandline as well as remove the venv from jupyter notebook incase it is no longer required and delete the venv. Let's dive into creating and setting up a new ven on jupyter notebook in windoes system. Recommended to create and add new venvs for each python project so that each project's dependencies can be safely isolated from others to avoid conflicts. 
 
