@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Setup Virtual Environment in Jupyter Notebook | Workout Data</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Setup Virtual Environment in Jupyter Notebook" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Setup new virtual environment for jupyter notebook using powershell on Windows." />
+<meta property="og:description" content="Setup new virtual environment for jupyter notebook using powershell on Windows." />
+<link rel="canonical" href="https://contactmansi.github.io/workoutdata/markdown/2022/01/29/Virtual-Environment-Jupyter-Notebook.html" />
+<meta property="og:url" content="https://contactmansi.github.io/workoutdata/markdown/2022/01/29/Virtual-Environment-Jupyter-Notebook.html" />
+<meta property="og:site_name" content="Workout Data" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-01-29T00:00:00-06:00" />
+<script type="application/ld+json">
+{"datePublished":"2022-01-29T00:00:00-06:00","url":"https://contactmansi.github.io/workoutdata/markdown/2022/01/29/Virtual-Environment-Jupyter-Notebook.html","@type":"BlogPosting","headline":"Setup Virtual Environment in Jupyter Notebook","dateModified":"2022-01-29T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://contactmansi.github.io/workoutdata/markdown/2022/01/29/Virtual-Environment-Jupyter-Notebook.html"},"description":"Setup new virtual environment for jupyter notebook using powershell on Windows.","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/workoutdata/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://contactmansi.github.io/workoutdata/feed.xml" title="Workout Data" /><link rel="shortcut icon" type="image/x-icon" href="/workoutdata/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.css" integrity="sha512-h7nl+xz8wgDlNM4NqKEM4F1NkIRS17M9+uJwIGwuo8vGqIl4BhuCKdxjWEINm+xyrUjNCnK5dCrhM0sj+wTIXw==" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/katex.min.js" integrity="sha512-/CMIhXiDA3m2c9kzRyd97MTb3MC6OVnx4TElQ7fkkoRghwDf6gi41gaT1PwF270W6+J60uTmwgeRpNpJdRV6sg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.12.0/contrib/auto-render.min.js" integrity="sha512-Do7uJAaHZm5OLrIv/yN4w0iG1dbu01kzdMNnFfu/mAqgUk6Nniv2JYHcwH+cNwjqgLcqcuBBk+JRvprLVI8azg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha512-0doc9hKxR3PYwso42RD1p5ySZpzzuDiOwMrdCEh2WdJZCjcmFKc/wEnL+z8fBQrnHoiNWbo+3fiGkOYXBdQp4A==" crossorigin="anonymous"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement( document.body, {
+        delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "[%", right: "%]", display: true},
+            {left: "$", right: "$", display: false}
+        ]}
+        );
+    });
+    </script>
+
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/workoutdata/">Workout Data</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/workoutdata/about/">About Me</a><a class="page-link" href="/workoutdata/search/">Search</a><a class="page-link" href="/workoutdata/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Setup Virtual Environment in Jupyter Notebook</h1><p class="page-description">Setup new virtual environment for jupyter notebook using powershell on Windows.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-01-29T00:00:00-06:00" itemprop="datePublished">
+        Jan 29, 2022
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      1 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/workoutdata/categories/#markdown">markdown</a>
+        
+      
+      </p>
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul class="section-nav">
+<li class="toc-entry toc-h1"><a href="#objective">OBJECTIVE</a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#create--activate-new-virtual-environment-on-windows-system">CREATE &amp; ACTIVATE NEW VIRTUAL ENVIRONMENT ON WINDOWS SYSTEM</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#navigate-to-directory-where-you-new-virtual-environment-is-to-be-created">NAVIGATE TO DIRECTORY WHERE YOU NEW VIRTUAL ENVIRONMENT IS TO BE CREATED</a></li>
+<li class="toc-entry toc-h3"><a href="#create-new-folder-where-environment-will-be-saved-such-as-venv_project_name">CREATE NEW FOLDER WHERE ENVIRONMENT WILL BE SAVED such as venv_project_name</a></li>
+<li class="toc-entry toc-h3"><a href="#change-directory-to-new-folder">CHANGE DIRECTORY TO NEW FOLDER</a></li>
+<li class="toc-entry toc-h3"><a href="#create-new-virtual-environment-using-virtualenv-wrapper">CREATE NEW VIRTUAL ENVIRONMENT USING VIRTUALENV WRAPPER</a></li>
+<li class="toc-entry toc-h3"><a href="#activate-new-virtual-environment">ACTIVATE NEW VIRTUAL ENVIRONMENT</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#setup-new-environment-on-jupyter-notebook-as-a-kernel">SETUP NEW ENVIRONMENT ON JUPYTER NOTEBOOK AS A KERNEL</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#intsall-ipykernel-in-new-virtual-environment">INTSALL IPYKERNEL IN NEW VIRTUAL ENVIRONMENT</a></li>
+<li class="toc-entry toc-h3"><a href="#add-new-virtual-environmentkernel-to-jupyter-notebook">ADD NEW VIRTUAL ENVIRONMENT/KERNEL TO JUPYTER NOTEBOOK</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#activate-new-virual-environment-or-kernel-in-jupyter-notebook">ACTIVATE NEW VIRUAL ENVIRONMENT OR KERNEL IN JUPYTER NOTEBOOK</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#congrats-new-virtual-environment-kernel-is-now-actiavted-in-jupyter-notebook">Congrats! New Virtual Environment Kernel is now actiavted in Jupyter notebook</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#delete-kernel-from-jupyter-notebook">DELETE KERNEL FROM JUPYTER NOTEBOOK</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#list-all-kernels-to-copy-name-of-kernel-to-be-removed">List all kernels to copy name of kernel to be removed</a></li>
+<li class="toc-entry toc-h3"><a href="#remove-kernel-using-unistall">Remove kernel using unistall</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul><h1 id="objective">
+<a class="anchor" href="#objective" aria-hidden="true"><span class="octicon octicon-link"></span></a>OBJECTIVE</h1>
+<ol>
+  <li>Create New Virtual Environment on Windows local system using virtualenv wrapper</li>
+  <li>Activate virtual environment</li>
+  <li>Add Virtual Environment Kernel to jupyter notebook</li>
+  <li>Activate New virtual environment Kernel in jupyterbook using ‘Change Kernel’</li>
+  <li>Remove/Delete a kernel from jupyter notebook</li>
+</ol>
+
+<h2 id="create--activate-new-virtual-environment-on-windows-system">
+<a class="anchor" href="#create--activate-new-virtual-environment-on-windows-system" aria-hidden="true"><span class="octicon octicon-link"></span></a>CREATE &amp; ACTIVATE NEW VIRTUAL ENVIRONMENT ON WINDOWS SYSTEM</h2>
+
+<p><strong>NOTE:</strong> All commands are for Windows PowerShell 2</p>
+
+<h3 id="navigate-to-directory-where-you-new-virtual-environment-is-to-be-created">
+<a class="anchor" href="#navigate-to-directory-where-you-new-virtual-environment-is-to-be-created" aria-hidden="true"><span class="octicon octicon-link"></span></a>NAVIGATE TO DIRECTORY WHERE YOU NEW VIRTUAL ENVIRONMENT IS TO BE CREATED</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd Replace_this_with\path_to_directory\for_new_venv\
+</code></pre></div></div>
+<h3 id="create-new-folder-where-environment-will-be-saved-such-as-venv_project_name">
+<a class="anchor" href="#create-new-folder-where-environment-will-be-saved-such-as-venv_project_name" aria-hidden="true"><span class="octicon octicon-link"></span></a>CREATE NEW FOLDER WHERE ENVIRONMENT WILL BE SAVED such as venv_project_name</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir venv_NEW_DIRECTORY_NAME
+</code></pre></div></div>
+<h3 id="change-directory-to-new-folder">
+<a class="anchor" href="#change-directory-to-new-folder" aria-hidden="true"><span class="octicon octicon-link"></span></a>CHANGE DIRECTORY TO NEW FOLDER</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd .\venv_NEW_DIRECTORY_NAME\
+</code></pre></div></div>
+
+<h3 id="create-new-virtual-environment-using-virtualenv-wrapper">
+<a class="anchor" href="#create-new-virtual-environment-using-virtualenv-wrapper" aria-hidden="true"><span class="octicon octicon-link"></span></a>CREATE NEW VIRTUAL ENVIRONMENT USING VIRTUALENV WRAPPER</h3>
+<ul>
+  <li>CHOOSE ANY SUITABLE VIRTUAL ENVIRONMENT NAME such as venv_projectname</li>
+  <li>Providing path to python installation is optional. Use any one command below:
+    <div class="language-plaintext highlighter-rouge">
+<div class="highlight"><pre class="highlight"><code>virtualenv virtual_env_name
+virtualenv virtual_env_name -p C:/ProgramData/Anaconda3/python.exe
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h3 id="activate-new-virtual-environment">
+<a class="anchor" href="#activate-new-virtual-environment" aria-hidden="true"><span class="octicon octicon-link"></span></a>ACTIVATE NEW VIRTUAL ENVIRONMENT</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./virtual_env_name/Scripts/activate
+</code></pre></div></div>
+
+<h2 id="setup-new-environment-on-jupyter-notebook-as-a-kernel">
+<a class="anchor" href="#setup-new-environment-on-jupyter-notebook-as-a-kernel" aria-hidden="true"><span class="octicon octicon-link"></span></a>SETUP NEW ENVIRONMENT ON JUPYTER NOTEBOOK AS A KERNEL</h2>
+
+<h3 id="intsall-ipykernel-in-new-virtual-environment">
+<a class="anchor" href="#intsall-ipykernel-in-new-virtual-environment" aria-hidden="true"><span class="octicon octicon-link"></span></a>INTSALL IPYKERNEL IN NEW VIRTUAL ENVIRONMENT</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip install ipykernel
+</code></pre></div></div>
+
+<h3 id="add-new-virtual-environmentkernel-to-jupyter-notebook">
+<a class="anchor" href="#add-new-virtual-environmentkernel-to-jupyter-notebook" aria-hidden="true"><span class="octicon octicon-link"></span></a>ADD NEW VIRTUAL ENVIRONMENT/KERNEL TO JUPYTER NOTEBOOK</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python -m ipykernel install --name=virtual_env_name
+jupyter kernelspec list
+</code></pre></div></div>
+
+<h2 id="activate-new-virual-environment-or-kernel-in-jupyter-notebook">
+<a class="anchor" href="#activate-new-virual-environment-or-kernel-in-jupyter-notebook" aria-hidden="true"><span class="octicon octicon-link"></span></a>ACTIVATE NEW VIRUAL ENVIRONMENT OR KERNEL IN JUPYTER NOTEBOOK</h2>
+<ul>
+  <li>Launch jupyter notebook through commandline using <code class="language-plaintext highlighter-rouge">jupyter notebook</code> command</li>
+  <li>Open a new notebook</li>
+  <li>Alternatively, if jupyter notebook is already running then refresh/reload browser</li>
+  <li>In the Menu bar navigate to Kernel –&gt; Change Kernel –&gt; Select virtual_env_name (name of the newly created and added virtual environment)</li>
+  <li>Observe Kernel name on the top right change from <code class="language-plaintext highlighter-rouge">Python 3</code> to <code class="language-plaintext highlighter-rouge">virtual_env_name</code>
+</li>
+</ul>
+
+<h3 id="congrats-new-virtual-environment-kernel-is-now-actiavted-in-jupyter-notebook">
+<a class="anchor" href="#congrats-new-virtual-environment-kernel-is-now-actiavted-in-jupyter-notebook" aria-hidden="true"><span class="octicon octicon-link"></span></a>Congrats! New Virtual Environment Kernel is now actiavted in Jupyter notebook</h3>
+
+<ul>
+  <li>For using an existing kernel already added to jupyter notebook only navigate to Kernel –&gt; Change Kernel –&gt; Select virtual_env_name</li>
+  <li>There is no need to activate virtual environment in command prompt or terminal to use the kernel in jupyter notebook. The terminal for jupyter notebook will shutdown the running <code class="language-plaintext highlighter-rouge">Python 3</code> Kernel and activated the selected <code class="language-plaintext highlighter-rouge">virtual_env_name</code> kernel</li>
+  <li>To install pip packages activate virtual environment on commandline and install packages using <code class="language-plaintext highlighter-rouge">pip install package_name</code> as usual on commandline</li>
+</ul>
+
+<h2 id="delete-kernel-from-jupyter-notebook">
+<a class="anchor" href="#delete-kernel-from-jupyter-notebook" aria-hidden="true"><span class="octicon octicon-link"></span></a>DELETE KERNEL FROM JUPYTER NOTEBOOK</h2>
+
+<h3 id="list-all-kernels-to-copy-name-of-kernel-to-be-removed">
+<a class="anchor" href="#list-all-kernels-to-copy-name-of-kernel-to-be-removed" aria-hidden="true"><span class="octicon octicon-link"></span></a>List all kernels to copy name of kernel to be removed</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jupyter kernelspec list`
+</code></pre></div></div>
+<h3 id="remove-kernel-using-unistall">
+<a class="anchor" href="#remove-kernel-using-unistall" aria-hidden="true"><span class="octicon octicon-link"></span></a>Remove kernel using <code class="language-plaintext highlighter-rouge">unistall</code>
+</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jupyter kernelspec uninstall unwanted_kernel_name
+</code></pre></div></div>
+
+  </div><a class="u-url" href="/workoutdata/markdown/2022/01/29/Virtual-Environment-Jupyter-Notebook.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/workoutdata/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/workoutdata/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/workoutdata/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>An easy to use blogging platform with support for Jupyter Notebooks.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/contactmansi" target="_blank" title="contactmansi"><svg class="svg-icon grey"><use xlink:href="/workoutdata/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://www.linkedin.com/in/mansiagarwal2911" target="_blank" title="mansiagarwal2911"><svg class="svg-icon grey"><use xlink:href="/workoutdata/assets/minima-social-icons.svg#linkedin"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
