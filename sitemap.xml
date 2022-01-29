@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://contactmansi.github.io/workoutdata/markdown/2020/01/14/test-markdown-post.html</loc>
-<lastmod>2020-01-14T00:00:00-06:00</lastmod>
-</url>
-<url>
-<loc>https://contactmansi.github.io/workoutdata/jupyter/2020/02/20/test.html</loc>
-<lastmod>2020-02-20T00:00:00-06:00</lastmod>
-</url>
-<url>
 <loc>https://contactmansi.github.io/workoutdata/hr-analytics/churn%20analysis/classification/recall/ibm-dataset/kaggle/2022/01/15/Employee-Churn-Prediction-HR-Analytics.html</loc>
 <lastmod>2022-01-15T00:00:00-06:00</lastmod>
 </url>
