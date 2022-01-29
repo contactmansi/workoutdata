@@ -13,3 +13,4 @@
 ## Checkout the latest post
 
 - [Cost Cutting In Human Resource Management Through Employee Churn Prediction](https://contactmansi.github.io/workoutdata/hr-analytics/churn%20analysis/classification/recall/ibm-dataset/kaggle/2021/11/25/Employee-Churn-Prediction-HR-Analytics.html)
+- [Setup Virtual Environment in Jupyter Notebook](https://contactmansi.github.io/workoutdata/markdown/2022/01/29/Virtual-Environment-Jupyter-Notebook.html)
