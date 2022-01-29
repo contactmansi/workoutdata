@@ -13,10 +13,11 @@
 <link rel="canonical" href="https://contactmansi.github.io/workoutdata/markdown/2022/01/29/Virtual-Environment-Jupyter-Notebook.html" />
 <meta property="og:url" content="https://contactmansi.github.io/workoutdata/markdown/2022/01/29/Virtual-Environment-Jupyter-Notebook.html" />
 <meta property="og:site_name" content="Workout Data" />
+<meta property="og:image" content="https://contactmansi.github.io/workoutdata/images/jnb_venv.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-01-29T00:00:00-06:00" />
 <script type="application/ld+json">
-{"datePublished":"2022-01-29T00:00:00-06:00","url":"https://contactmansi.github.io/workoutdata/markdown/2022/01/29/Virtual-Environment-Jupyter-Notebook.html","@type":"BlogPosting","headline":"Setup Virtual Environment in Jupyter Notebook","dateModified":"2022-01-29T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://contactmansi.github.io/workoutdata/markdown/2022/01/29/Virtual-Environment-Jupyter-Notebook.html"},"description":"Setup new virtual environment for jupyter notebook using powershell on Windows.","@context":"https://schema.org"}</script>
+{"datePublished":"2022-01-29T00:00:00-06:00","url":"https://contactmansi.github.io/workoutdata/markdown/2022/01/29/Virtual-Environment-Jupyter-Notebook.html","@type":"BlogPosting","image":"https://contactmansi.github.io/workoutdata/images/jnb_venv.png","headline":"Setup Virtual Environment in Jupyter Notebook","dateModified":"2022-01-29T00:00:00-06:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://contactmansi.github.io/workoutdata/markdown/2022/01/29/Virtual-Environment-Jupyter-Notebook.html"},"description":"Setup new virtual environment for jupyter notebook using powershell on Windows.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/workoutdata/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://contactmansi.github.io/workoutdata/feed.xml" title="Workout Data" /><link rel="shortcut icon" type="image/x-icon" href="/workoutdata/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -93,7 +94,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -109,109 +110,67 @@ window.onload = wrap_img;
     </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <ul class="section-nav">
-<li class="toc-entry toc-h1"><a href="#objective">OBJECTIVE</a>
-<ul>
-<li class="toc-entry toc-h2"><a href="#create--activate-new-virtual-environment-on-windows-system">CREATE &amp; ACTIVATE NEW VIRTUAL ENVIRONMENT ON WINDOWS SYSTEM</a>
-<ul>
-<li class="toc-entry toc-h3"><a href="#navigate-to-directory-where-you-new-virtual-environment-is-to-be-created">NAVIGATE TO DIRECTORY WHERE YOU NEW VIRTUAL ENVIRONMENT IS TO BE CREATED</a></li>
-<li class="toc-entry toc-h3"><a href="#create-new-folder-where-environment-will-be-saved-such-as-venv_project_name">CREATE NEW FOLDER WHERE ENVIRONMENT WILL BE SAVED such as venv_project_name</a></li>
-<li class="toc-entry toc-h3"><a href="#change-directory-to-new-folder">CHANGE DIRECTORY TO NEW FOLDER</a></li>
-<li class="toc-entry toc-h3"><a href="#create-new-virtual-environment-using-virtualenv-wrapper">CREATE NEW VIRTUAL ENVIRONMENT USING VIRTUALENV WRAPPER</a></li>
-<li class="toc-entry toc-h3"><a href="#activate-new-virtual-environment">ACTIVATE NEW VIRTUAL ENVIRONMENT</a></li>
-</ul>
-</li>
-<li class="toc-entry toc-h2"><a href="#setup-new-environment-on-jupyter-notebook-as-a-kernel">SETUP NEW ENVIRONMENT ON JUPYTER NOTEBOOK AS A KERNEL</a>
-<ul>
-<li class="toc-entry toc-h3"><a href="#intsall-ipykernel-in-new-virtual-environment">INTSALL IPYKERNEL IN NEW VIRTUAL ENVIRONMENT</a></li>
-<li class="toc-entry toc-h3"><a href="#add-new-virtual-environmentkernel-to-jupyter-notebook">ADD NEW VIRTUAL ENVIRONMENT/KERNEL TO JUPYTER NOTEBOOK</a></li>
-</ul>
-</li>
-<li class="toc-entry toc-h2"><a href="#activate-new-virual-environment-or-kernel-in-jupyter-notebook">ACTIVATE NEW VIRUAL ENVIRONMENT OR KERNEL IN JUPYTER NOTEBOOK</a>
-<ul>
-<li class="toc-entry toc-h3"><a href="#congrats-new-virtual-environment-kernel-is-now-actiavted-in-jupyter-notebook">Congrats! New Virtual Environment Kernel is now actiavted in Jupyter notebook</a></li>
-</ul>
-</li>
-<li class="toc-entry toc-h2"><a href="#delete-kernel-from-jupyter-notebook">DELETE KERNEL FROM JUPYTER NOTEBOOK</a>
-<ul>
-<li class="toc-entry toc-h3"><a href="#list-all-kernels-to-copy-name-of-kernel-to-be-removed">List all kernels to copy name of kernel to be removed</a></li>
-<li class="toc-entry toc-h3"><a href="#remove-kernel-using-unistall">Remove kernel using unistall</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul><h1 id="objective">
-<a class="anchor" href="#objective" aria-hidden="true"><span class="octicon octicon-link"></span></a>OBJECTIVE</h1>
+    <p>To use virtual environments with jupyter notebook, best practice is to create an independent virtual environment and add it to jupyter notebook as a kernel. This provides the portability to use the same venv on other IDEs or commandline as well as remove the venv from jupyter notebook incase it is no longer required and delete the venv. Let’s dive into creating and setting up a new ven on jupyter notebook in windoes system. Recommended to create and add new venvs for each python project so that each project’s dependencies can be safely isolated from others to avoid conflicts.</p>
+
+<p>Jupyter notebook handles venvs as kernels. These kernels can be added to existing jupyter notebook by installing ipykernel library on venv and installing the venv as new kernel to existing jupyter notebook installation. Follow the steps below by updating the command format as per your OS and commandline.</p>
+
+<h1 id="objective">OBJECTIVE</h1>
 <ol>
-  <li>Create New Virtual Environment on Windows local system using virtualenv wrapper</li>
-  <li>Activate virtual environment</li>
+  <li>Create &amp; activate New Virtual Environment on Windows local system using virtualenv wrapper</li>
   <li>Add Virtual Environment Kernel to jupyter notebook</li>
   <li>Activate New virtual environment Kernel in jupyterbook using ‘Change Kernel’</li>
   <li>Remove/Delete a kernel from jupyter notebook</li>
 </ol>
 
-<h2 id="create--activate-new-virtual-environment-on-windows-system">
-<a class="anchor" href="#create--activate-new-virtual-environment-on-windows-system" aria-hidden="true"><span class="octicon octicon-link"></span></a>CREATE &amp; ACTIVATE NEW VIRTUAL ENVIRONMENT ON WINDOWS SYSTEM</h2>
+<h2 id="1-create--activate-new-virtual-environment-on-windows-system">1. CREATE &amp; ACTIVATE NEW VIRTUAL ENVIRONMENT ON WINDOWS SYSTEM</h2>
 
-<p><strong>NOTE:</strong> All commands are for Windows PowerShell 2</p>
+<p><strong>NOTE:</strong> All commands are based on Windows PowerShell 2. Please follow the steps by changing command formats accordingly for your commandline tool and OS.</p>
 
-<h3 id="navigate-to-directory-where-you-new-virtual-environment-is-to-be-created">
-<a class="anchor" href="#navigate-to-directory-where-you-new-virtual-environment-is-to-be-created" aria-hidden="true"><span class="octicon octicon-link"></span></a>NAVIGATE TO DIRECTORY WHERE YOU NEW VIRTUAL ENVIRONMENT IS TO BE CREATED</h3>
+<h3 id="navigate-to-directory-where-you-new-virtual-environment-is-to-be-created">Navigate to directory where you new virtual environment is to be created</h3>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd Replace_this_with\path_to_directory\for_new_venv\
 </code></pre></div></div>
-<h3 id="create-new-folder-where-environment-will-be-saved-such-as-venv_project_name">
-<a class="anchor" href="#create-new-folder-where-environment-will-be-saved-such-as-venv_project_name" aria-hidden="true"><span class="octicon octicon-link"></span></a>CREATE NEW FOLDER WHERE ENVIRONMENT WILL BE SAVED such as venv_project_name</h3>
+<h3 id="create-new-folder-where-environment-will-be-saved-such-as-venv_project_name">Create new folder where environment will be saved such as venv_project_name</h3>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir venv_NEW_DIRECTORY_NAME
 </code></pre></div></div>
-<h3 id="change-directory-to-new-folder">
-<a class="anchor" href="#change-directory-to-new-folder" aria-hidden="true"><span class="octicon octicon-link"></span></a>CHANGE DIRECTORY TO NEW FOLDER</h3>
+<h3 id="navigate-into-new-directory">Navigate into new directory</h3>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd .\venv_NEW_DIRECTORY_NAME\
 </code></pre></div></div>
 
-<h3 id="create-new-virtual-environment-using-virtualenv-wrapper">
-<a class="anchor" href="#create-new-virtual-environment-using-virtualenv-wrapper" aria-hidden="true"><span class="octicon octicon-link"></span></a>CREATE NEW VIRTUAL ENVIRONMENT USING VIRTUALENV WRAPPER</h3>
+<h3 id="create-new-virtual-environment-using-virtualenv-wrapper">Create New Virtual Environment Using Virtualenv Wrapper</h3>
 <ul>
-  <li>CHOOSE ANY SUITABLE VIRTUAL ENVIRONMENT NAME such as venv_projectname</li>
+  <li>Choose Any Suitable Virtual Environment Name Such As virtual_env_name</li>
   <li>Providing path to python installation is optional. Use any one command below:
-    <div class="language-plaintext highlighter-rouge">
-<div class="highlight"><pre class="highlight"><code>virtualenv virtual_env_name
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>virtualenv virtual_env_name
 virtualenv virtual_env_name -p C:/ProgramData/Anaconda3/python.exe
 </code></pre></div>    </div>
   </li>
 </ul>
 
-<h3 id="activate-new-virtual-environment">
-<a class="anchor" href="#activate-new-virtual-environment" aria-hidden="true"><span class="octicon octicon-link"></span></a>ACTIVATE NEW VIRTUAL ENVIRONMENT</h3>
+<h3 id="activate-new-virtual-environment">Activate New Virtual Environment</h3>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./virtual_env_name/Scripts/activate
 </code></pre></div></div>
 
-<h2 id="setup-new-environment-on-jupyter-notebook-as-a-kernel">
-<a class="anchor" href="#setup-new-environment-on-jupyter-notebook-as-a-kernel" aria-hidden="true"><span class="octicon octicon-link"></span></a>SETUP NEW ENVIRONMENT ON JUPYTER NOTEBOOK AS A KERNEL</h2>
+<h2 id="2-add-virtual-environment-kernel-to-jupyter-notebook">2. ADD VIRTUAL ENVIRONMENT KERNEL TO JUPYTER NOTEBOOK</h2>
 
-<h3 id="intsall-ipykernel-in-new-virtual-environment">
-<a class="anchor" href="#intsall-ipykernel-in-new-virtual-environment" aria-hidden="true"><span class="octicon octicon-link"></span></a>INTSALL IPYKERNEL IN NEW VIRTUAL ENVIRONMENT</h3>
+<h3 id="intsall-ipykernel-in-new-virtual-environment">Intsall <code class="language-plaintext highlighter-rouge">ipykernel</code> in New Virtual Environment</h3>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip install ipykernel
 </code></pre></div></div>
 
-<h3 id="add-new-virtual-environmentkernel-to-jupyter-notebook">
-<a class="anchor" href="#add-new-virtual-environmentkernel-to-jupyter-notebook" aria-hidden="true"><span class="octicon octicon-link"></span></a>ADD NEW VIRTUAL ENVIRONMENT/KERNEL TO JUPYTER NOTEBOOK</h3>
+<h3 id="add-new-venv-as-ipykernel-to-jupyter-notebook--list-all-ipykernels">Add New Venv as ipykernel to Jupyter Notebook &amp; list all ipykernels</h3>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python -m ipykernel install --name=virtual_env_name
 jupyter kernelspec list
 </code></pre></div></div>
 
-<h2 id="activate-new-virual-environment-or-kernel-in-jupyter-notebook">
-<a class="anchor" href="#activate-new-virual-environment-or-kernel-in-jupyter-notebook" aria-hidden="true"><span class="octicon octicon-link"></span></a>ACTIVATE NEW VIRUAL ENVIRONMENT OR KERNEL IN JUPYTER NOTEBOOK</h2>
+<h2 id="3-activate-new-virual-environment-or-kernel-in-jupyter-notebook">3. ACTIVATE NEW VIRUAL ENVIRONMENT OR KERNEL IN JUPYTER NOTEBOOK</h2>
 <ul>
   <li>Launch jupyter notebook through commandline using <code class="language-plaintext highlighter-rouge">jupyter notebook</code> command</li>
   <li>Open a new notebook</li>
   <li>Alternatively, if jupyter notebook is already running then refresh/reload browser</li>
   <li>In the Menu bar navigate to Kernel –&gt; Change Kernel –&gt; Select virtual_env_name (name of the newly created and added virtual environment)</li>
-  <li>Observe Kernel name on the top right change from <code class="language-plaintext highlighter-rouge">Python 3</code> to <code class="language-plaintext highlighter-rouge">virtual_env_name</code>
-</li>
+  <li>Observe Kernel name on the top right change from <code class="language-plaintext highlighter-rouge">Python 3</code> to <code class="language-plaintext highlighter-rouge">virtual_env_name</code></li>
 </ul>
 
-<h3 id="congrats-new-virtual-environment-kernel-is-now-actiavted-in-jupyter-notebook">
-<a class="anchor" href="#congrats-new-virtual-environment-kernel-is-now-actiavted-in-jupyter-notebook" aria-hidden="true"><span class="octicon octicon-link"></span></a>Congrats! New Virtual Environment Kernel is now actiavted in Jupyter notebook</h3>
+<h3 id="congrats-new-virtual-environment-kernel-is-now-actiavted-in-jupyter-notebook">Congrats! New Virtual Environment Kernel is now actiavted in Jupyter notebook</h3>
 
 <ul>
   <li>For using an existing kernel already added to jupyter notebook only navigate to Kernel –&gt; Change Kernel –&gt; Select virtual_env_name</li>
@@ -219,16 +178,12 @@ jupyter kernelspec list
   <li>To install pip packages activate virtual environment on commandline and install packages using <code class="language-plaintext highlighter-rouge">pip install package_name</code> as usual on commandline</li>
 </ul>
 
-<h2 id="delete-kernel-from-jupyter-notebook">
-<a class="anchor" href="#delete-kernel-from-jupyter-notebook" aria-hidden="true"><span class="octicon octicon-link"></span></a>DELETE KERNEL FROM JUPYTER NOTEBOOK</h2>
+<h2 id="4-delete-kernel-from-jupyter-notebook">4. DELETE KERNEL FROM JUPYTER NOTEBOOK</h2>
 
-<h3 id="list-all-kernels-to-copy-name-of-kernel-to-be-removed">
-<a class="anchor" href="#list-all-kernels-to-copy-name-of-kernel-to-be-removed" aria-hidden="true"><span class="octicon octicon-link"></span></a>List all kernels to copy name of kernel to be removed</h3>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jupyter kernelspec list`
+<h3 id="list-all-kernels-to-copy-name-of-kernel-to-be-removed">List all kernels to copy name of kernel to be removed</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jupyter kernelspec list
 </code></pre></div></div>
-<h3 id="remove-kernel-using-unistall">
-<a class="anchor" href="#remove-kernel-using-unistall" aria-hidden="true"><span class="octicon octicon-link"></span></a>Remove kernel using <code class="language-plaintext highlighter-rouge">unistall</code>
-</h3>
+<h3 id="remove-kernel-using-unistall">Remove kernel using <code class="language-plaintext highlighter-rouge">unistall</code></h3>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jupyter kernelspec uninstall unwanted_kernel_name
 </code></pre></div></div>
 
