@@ -7,7 +7,7 @@
 
 # Let's Workout Data
 
-This blog it for "Learning how to share my learnings!" 
+This blog is meant for "Learning how to share my learnings!" 
 Enjoy the smooth reads - Keep it Simple :) 
 
 [Workoutdata](https://contactmansi.github.io/workoutdata/)
