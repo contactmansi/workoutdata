@@ -6,7 +6,7 @@ categories: [markdown]
 title: Must Follow Data Science Resources
 ---
 
-# Must Follow Data Science Resources
+## Python Data Science Resources
 
 1. ### [Python Data Science Handbook by Jake VanderPlas](https://jakevdp.github.io/PythonDataScienceHandbook/)
 
@@ -16,7 +16,7 @@ This website contains the full text of the [Python Data Science Handbook](https:
 
 
 
-# NLP Resources
+## NLP Resources
 
 1. ### [NLP 101: Word2Vec — Skip-gram and CBOW](https://towardsdatascience.com/nlp-101-word2vec-skip-gram-and-cbow-93512ee24314)
 
