@@ -8,8 +8,8 @@
 <meta name="generator" content="Jekyll v4.1.1" />
 <meta property="og:title" content="Classify faces using Traditional Machine Learning Algorithms" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="We can achieve reasonable performance on an image classification task by fitting a simple Machine Learning (ML) algorithm such as KNearestNeighbours or Random Forest Classifiers. Principal Component Analysis (PCA) can be effectively used to reduce number of features. We will evaluate classification performance by training KNNs and Random Forests on features that are computed from the raw pixels reduced by PCA." />
-<meta property="og:description" content="We can achieve reasonable performance on an image classification task by fitting a simple Machine Learning (ML) algorithm such as KNearestNeighbours or Random Forest Classifiers. Principal Component Analysis (PCA) can be effectively used to reduce number of features. We will evaluate classification performance by training KNNs and Random Forests on features that are computed from the raw pixels reduced by PCA." />
+<meta name="description" content="We can achieve reasonable performance on an image classification task by fitting a simple Machine Learning (ML) algorithm such as KNearestNeighbours or Random Forest Classifiers." />
+<meta property="og:description" content="We can achieve reasonable performance on an image classification task by fitting a simple Machine Learning (ML) algorithm such as KNearestNeighbours or Random Forest Classifiers." />
 <link rel="canonical" href="https://contactmansi.github.io/workoutdata/image-analytics/knn/random%20forest/pca/classification/faces-dataset/2022/03/11/facial_recognition_using_basic_ml.html" />
 <meta property="og:url" content="https://contactmansi.github.io/workoutdata/image-analytics/knn/random%20forest/pca/classification/faces-dataset/2022/03/11/facial_recognition_using_basic_ml.html" />
 <meta property="og:site_name" content="Workout Data" />
@@ -17,7 +17,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-03-11T00:00:00-06:00" />
 <script type="application/ld+json">
-{"description":"We can achieve reasonable performance on an image classification task by fitting a simple Machine Learning (ML) algorithm such as KNearestNeighbours or Random Forest Classifiers. Principal Component Analysis (PCA) can be effectively used to reduce number of features. We will evaluate classification performance by training KNNs and Random Forests on features that are computed from the raw pixels reduced by PCA.","url":"https://contactmansi.github.io/workoutdata/image-analytics/knn/random%20forest/pca/classification/faces-dataset/2022/03/11/facial_recognition_using_basic_ml.html","@type":"BlogPosting","headline":"Classify faces using Traditional Machine Learning Algorithms","dateModified":"2022-03-11T00:00:00-06:00","datePublished":"2022-03-11T00:00:00-06:00","image":"https://contactmansi.github.io/workoutdata/images/facial_recognition_traditional_ml.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://contactmansi.github.io/workoutdata/image-analytics/knn/random%20forest/pca/classification/faces-dataset/2022/03/11/facial_recognition_using_basic_ml.html"},"@context":"https://schema.org"}</script>
+{"description":"We can achieve reasonable performance on an image classification task by fitting a simple Machine Learning (ML) algorithm such as KNearestNeighbours or Random Forest Classifiers.","url":"https://contactmansi.github.io/workoutdata/image-analytics/knn/random%20forest/pca/classification/faces-dataset/2022/03/11/facial_recognition_using_basic_ml.html","@type":"BlogPosting","headline":"Classify faces using Traditional Machine Learning Algorithms","dateModified":"2022-03-11T00:00:00-06:00","datePublished":"2022-03-11T00:00:00-06:00","image":"https://contactmansi.github.io/workoutdata/images/facial_recognition_traditional_ml.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://contactmansi.github.io/workoutdata/image-analytics/knn/random%20forest/pca/classification/faces-dataset/2022/03/11/facial_recognition_using_basic_ml.html"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/workoutdata/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://contactmansi.github.io/workoutdata/feed.xml" title="Workout Data" /><link rel="shortcut icon" type="image/x-icon" href="/workoutdata/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -88,13 +88,13 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Classify faces using Traditional Machine Learning Algorithms</h1><p class="page-description">We can achieve reasonable performance on an image classification task by fitting a simple Machine Learning (ML) algorithm such as KNearestNeighbours or Random Forest Classifiers. Principal Component Analysis (PCA) can be effectively used to reduce number of features. We will evaluate classification performance by training KNNs and Random Forests on features that are computed from the raw pixels reduced by PCA.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-03-11T00:00:00-06:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">Classify faces using Traditional Machine Learning Algorithms</h1><p class="page-description">We can achieve reasonable performance on an image classification task by fitting a simple Machine Learning (ML) algorithm such as KNearestNeighbours or Random Forest Classifiers.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-03-11T00:00:00-06:00" itemprop="datePublished">
         Mar 11, 2022
       </time>
        • <span class="read-time" title="Estimated read time">
     
     
-      10 min read
+      11 min read
     
 </span></p>
 
@@ -158,10 +158,11 @@ window.onload = wrap_img;
         
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>Explore the power of traditional ML algorithms on image classification problem using a curated faces dataset. It is true that we can achieve reasonable performance on an image classification task by fitting a simple Machine Learning (ML) algorithm such as KNearestNeighbours (KNN) or Random Forest Classifiers. Principal Component Analysis (PCA) can be effectively used to reduce number of features. We will evaluate classification performance by training KNNs and Random Forests on features that are computed from the raw pixels reduced by PCA.</p>
 <h3 id="Setup-Files"><a href="https://github.com/contactmansi/facial-recoginition-traditional-machine-learning">Setup Files</a><a class="anchor-link" href="#Setup-Files"> </a></h3><ul>
 <li>face: Database of face images</li>
 <li>FisherFace.py: Helps compute PCA features</li>
-<li>Steps to setup can be found on <a href="https://github.com/contactmansi/facial-recoginition-traditional-machine-learning">Github</a></li>
+<li>Files and Steps to setup can be found on <a href="https://github.com/contactmansi/facial-recoginition-traditional-machine-learning">Github</a></li>
 </ul>
 <h3 id="Database">Database<a class="anchor-link" href="#Database"> </a></h3><p>The image files have names ppppp_xx_yy.bmp, where ppppp denotes the identity of the person called person ID; xx denotes the head orientation (we can ignore that, since in this dataset all images have same head orientation); and yy denotes the lighting condition. All images have been cropped and aligned with a height, width of 160, 140 pixels respectively.</p>
 <p><strong>Attention</strong>:</p>
@@ -175,7 +176,7 @@ window.onload = wrap_img;
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>After setting up virtual environment import libraries and FiesherFace.py</strong></p>
+<p><strong>After setting up virtual environment import libraries and FisherFace.py</strong></p>
 
 </div>
 </div>
