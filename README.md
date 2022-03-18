@@ -15,6 +15,6 @@ Enjoy the smooth reads - Keep it Simple :)
 
 ## Checkout the latest posts
 
-- [Facial Recognition using Convolutional Neural Network (CNN)](https://contactmansi.github.io/workoutdata/image-analytics/cnn/classification/fully%20connected/convolutional%20neural%20network/faces-dataset/2022/03/03/CNN-based-face-image-classifier.html)
-- [Cost Cutting In Human Resource Management Through Employee Churn Prediction](https://contactmansi.github.io/workoutdata/hr-analytics/churn%20analysis/classification/recall/ibm-dataset/kaggle/2021/11/25/Employee-Churn-Prediction-HR-Analytics.html)
-- [Setup Virtual Environment in Jupyter Notebook](https://contactmansi.github.io/workoutdata/markdown/2022/01/29/Virtual-Environment-Jupyter-Notebook.html)
+- [Image Classification Facial Recognition using Convolutional Neural Network (CNN)](https://contactmansi.github.io/workoutdata/image-analytics/cnn/classification/fully%20connected/convolutional%20neural%20network/faces-dataset/2022/03/03/CNN-based-face-image-classifier.html)
+- [HR Analytics - Cost Cutting In Human Resource Management Through Employee Churn Prediction](https://contactmansi.github.io/workoutdata/hr-analytics/churn%20analysis/classification/recall/ibm-dataset/kaggle/2021/11/25/Employee-Churn-Prediction-HR-Analytics.html)
+- [Setup Virtual Environment in Jupyter Notebook (Windows, MacOS coming soon!](https://contactmansi.github.io/workoutdata/markdown/2022/01/29/Virtual-Environment-Jupyter-Notebook.html)
