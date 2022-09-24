@@ -4,6 +4,8 @@ layout: post
 description: Enhance and build knowledge on Python, Visualization, Machine Learning and Data Science
 categories: [markdown]
 title: Must Follow Data Science Resources
+image: images/MustReads.jpg
+
 ---
 
 ## Python Data Science Resources
