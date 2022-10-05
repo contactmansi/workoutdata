@@ -12,3 +12,8 @@ _notebooks/.ipynb_checkpoints
 .netlify
 .tweet-cache
 __pycache__
+.DS_Store
+_notebooks/.DS_Store
+_notebooks/ghtop_images/.DS_Store
+_posts/.DS_Store
+_posts/.ipynb_checkpoints/
