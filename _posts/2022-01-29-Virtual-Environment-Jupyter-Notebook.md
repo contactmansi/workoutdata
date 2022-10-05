@@ -43,9 +43,14 @@ virtualenv virtual_env_name
 virtualenv virtual_env_name -p C:/ProgramData/Anaconda3/python.exe
 ```
 
-### Activate New Virtual Environment
+### Activate New Virtual Environment for windows
 ```
 ./virtual_env_name/Scripts/activate
+```
+
+### Alternatively Activate New Virtual Environment for macOS
+```
+source ./virtual_env_name/bin/activate
 ```
 
 ## 2. ADD VIRTUAL ENVIRONMENT KERNEL TO JUPYTER NOTEBOOK
