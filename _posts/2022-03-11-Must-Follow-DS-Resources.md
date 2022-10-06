@@ -14,6 +14,8 @@ image: images/MustReads.jpg
 
 This website contains the full text of the [Python Data Science Handbook](https://www.oreilly.com/library/view/python-data-science/9781491912126/) by Jake VanderPlas; the content is available on [GitHub](https://github.com/jakevdp/PythonDataScienceHandbook) in the form of Jupyter notebooks.
 
+2. ### [Data Mining Techniques](https://blog.galvanize.com/four-data-mining-techniques-for-businesses-that-everyone-should-know/)
+
 
 
 
