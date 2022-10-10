@@ -4,14 +4,16 @@ title: About Me
 permalink: /about/
 ---
 
-Mansi is currently pursuing Masters in [Business Analytics at NUS](https://msba.nus.edu.sg/), Singapore. She has been leveraging Data Science, Business Knowledge, Machine Learning and Software Engineering to deliver innovative solutions for complex data-oriented problems.
+Mansi is currently working as Senior Data Engineer at Singapore Airlines along with pursuing Masters in [Business Analytics(part-time) at NUS](https://msba.nus.edu.sg/), Singapore. She has been leveraging Data Science, Business Knowledge, Machine Learning and Software Engineering to deliver innovative solutions for complex data-oriented problems.
 
 **TOP SKILLS:**
+- Data Pipelining, Data Warehouse Management, Pyspark, Airflow, AWS Services
 - Modeling: Predictive and Statistical Modelling, Supervised Learning Methods (Linear regression, logistic regression, lasso, ridge regression, Multi-Class Classification, Tree and Ensemble Models), Unsupervised Learning Methods (Clustering: K-means, K-Medians, K-Medoids, Hierarchical Clustering; Dimensionality Reduction: PCA, PCR)
 - Language: Python, SQL (PostgreSQL, MySQL), NoSQL (MongoDB), XML
 - Data Visualization & Dashboard: Google Data Studio, GGplot for python, Plotly, Cufflinks, Matplotlib, seaborn
 
 **INDUSTRY EXPERIENCE:**
+- Data Engineering
 - Data Science industry experience: Excitedly worked on cutting edge Applied ML and AI technologies in the Real-estate market for Houzen Holdings based out of London, UK. Launched AI Valuation price prediction model for UK based properties by EDA on enormous amount of live property data. Experienced at AWS Backend Engineering services and APIs, GCP(Vision Tables, BigTable, Storage and integration through APIs), Google Data Studio for dashboard and visualization.
 - Backend Software Developer Industry Experience: Experienced Software Developer in Java and Python. Worked with Microservices, RESTful APIs, RDBMS, An adaptive team player exposed to end-to-end software development lifecycle.
 
