@@ -4,6 +4,7 @@ layout: post
 description: Enhance and build knowledge on Backend Architeture and Design
 categories: [markdown]
 title: Backend Architecture & Development Resources
+image: images/API-Centric-Architecture.jpg
 ---
 
 # Backend Architecture & Development Resources
