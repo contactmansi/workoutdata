@@ -19,6 +19,15 @@ This website contains the full text of the [Python Data Science Handbook](https:
 <hr>
 
 
+## Neural Network and Deep Learning Resources
+
+1. ### [Dive into Deep Learning](https://d2l.ai/)
+
+This is an interactive open-source book with codem math, and discussions drafted in Jupyter Notebooks. Interactive website helps to learn by doing. Implementations of all neural network architectures with PyTorch, NumPy/MXNet, and TensorFlow.
+
+<hr>
+
+
 ## NLP Resources
 
 1. ### [NLP 101: Word2Vec — Skip-gram and CBOW](https://towardsdatascience.com/nlp-101-word2vec-skip-gram-and-cbow-93512ee24314)
