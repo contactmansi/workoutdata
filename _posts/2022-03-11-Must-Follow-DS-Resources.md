@@ -16,8 +16,7 @@ This website contains the full text of the [Python Data Science Handbook](https:
 
 2. ### [Data Mining Techniques](https://blog.galvanize.com/four-data-mining-techniques-for-businesses-that-everyone-should-know/)
 
-
-
+<hr>
 
 
 ## NLP Resources
