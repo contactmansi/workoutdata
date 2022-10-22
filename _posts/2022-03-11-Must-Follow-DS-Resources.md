@@ -16,8 +16,16 @@ This website contains the full text of the [Python Data Science Handbook](https:
 
 2. ### [Data Mining Techniques](https://blog.galvanize.com/four-data-mining-techniques-for-businesses-that-everyone-should-know/)
 
+<hr>
 
 
+## Neural Network and Deep Learning Resources
+
+1. ### [Dive into Deep Learning](https://d2l.ai/)
+
+This is an interactive open-source book with codem math, and discussions drafted in Jupyter Notebooks. Interactive website helps to learn by doing. Implementations of all neural network architectures with PyTorch, NumPy/MXNet, and TensorFlow.
+
+<hr>
 
 
 ## NLP Resources

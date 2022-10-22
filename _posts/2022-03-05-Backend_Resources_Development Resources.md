@@ -13,3 +13,16 @@ image: images/API-Centric-Architecture.jpg
 2. [REST Architecture Style Explained](https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm)
 3. [REST vs RESTful API](https://hevodata.com/learn/rest-vs-restful-apis/)
 
+
+# Git/GitHub
+
+1. [GitHub Education Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
+
+
+# Linux
+
+1. [Linux Training Academy Linus Commands Cheat Sheet](https://www.linuxtrainingacademy.com/linux-commands-cheat-sheet/)
+
+
+
+
