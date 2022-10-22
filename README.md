@@ -10,7 +10,7 @@ Kept it Simple - Hope you Enjoy the smooth reads:)
 
 
 ## Checkout latest articles:
-- [Image Classification - Classify faces using Traditional Machine Learning Algorithms](https://contactmansi.github.io/workoutdata/image-analytics/knn/random%20forest/pca/classification/faces-dataset/2022/03/11/facial_recognition_using_basic_ml.html)
+- [Image Classification - Classify faces using Traditional Machine Learning Algorithms](https://contactmansi.github.io/workoutdata/image-analytics/knn/random%20forest/pca/classification/faces-dataset/2022/10/22/facial_recognition_using_basic_ml.html)
 - [Image Classification Facial Recognition using Convolutional Neural Network (CNN)](https://contactmansi.github.io/workoutdata/image-analytics/cnn/classification/fully%20connected/convolutional%20neural%20network/faces-dataset/2022/03/03/CNN-based-face-image-classifier.html)
 - [HR Analytics - Cost Cutting In Human Resource Management Through Employee Churn Prediction](https://contactmansi.github.io/workoutdata/hr-analytics/churn%20analysis/classification/recall/ibm-dataset/kaggle/2021/11/25/Employee-Churn-Prediction-HR-Analytics.html)
 - [Setup Virtual Environment in Jupyter Notebook for Windows (MacOS coming soon!)](https://contactmansi.github.io/workoutdata/markdown/2022/01/29/Virtual-Environment-Jupyter-Notebook.html)
